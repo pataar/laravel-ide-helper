@@ -54,8 +54,8 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php }}
-        coverage: none
-        extensions: pdo_sqlite, fileinfo, pcov
+        coverage: pcov
+        extensions: pdo_sqlite, fileinfo
 
     - name: Install dependencies
       run: |
